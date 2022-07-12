@@ -38,9 +38,10 @@ refs.input.addEventListener(
           refs.countryList.innerHTML = '';
           makeMarkupForOnlyOneCountry(countries, refs.countryInfo);
           return;
+        } else {
+          refs.countryInfo.innerHTML = '';
+          makeMarkup(countries, refs.countryList);
         }
-
-        makeMarkup(countries, refs.countryList);
       })
       .catch(warningNotification);
   }, DEBOUNCE_DELAY)
