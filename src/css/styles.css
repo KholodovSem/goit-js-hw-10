@@ -18,3 +18,52 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+/*! For Contries List !*/
+.country-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.country-list__item {
+  display: flex;
+}
+
+.country-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.country-list__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/*? For Single Country Card ?*/
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.country-list__item.single-card {
+  display: block;
+}
+
+.country-list__text.single-card {
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.country-info {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.header {
+  margin-right: 10px;
+  font-size: 20px;
+}
