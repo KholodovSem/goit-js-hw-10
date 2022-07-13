@@ -25,6 +25,7 @@ refs.input.addEventListener(
 
     if (inputValue === '') {
       refs.countryList.innerHTML = '';
+      refs.countryInfo.innerHTML = '';
       return;
     }
 
@@ -32,6 +33,7 @@ refs.input.addEventListener(
       .then(countries => {
         if (countries.length > 10) {
           helpNotification();
+          return;
         }
 
         if (countries.length === 1) {
